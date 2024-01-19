@@ -1,0 +1,43 @@
+@import '../../variables.scss';
+
+.Step1 {
+  .title {
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $generalBlack;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .items {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    @media (max-width: 370px) {
+      justify-content: center;
+    }
+
+    .item {
+      display: flex;
+      overflow: hidden;
+      align-items: center;
+      justify-content: space-between;
+      max-width: 172px;
+      min-height: 172px;
+      border: 1.042px solid #e1e1e1;
+      border-radius: 20.848px;
+      background: linear-gradient(214deg, #f1f1f1 12.33%, #fff 69.93%);
+
+      .text {
+        font-size: 16.679px;
+        font-weight: 500;
+        line-height: 22.933px;
+        letter-spacing: 0.208px;
+        color: $generalBlack;
+      }
+    }
+  }
+}

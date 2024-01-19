@@ -1,0 +1,17 @@
+@import '../../variables.scss';
+
+.BackButton {
+  display: flex;
+  padding-left: 18px;
+  transition: all 0.3s;
+  border-radius: 5px;
+
+  &:hover {
+    background-color: $primary-50;
+  }
+}
+
+.hidden {
+  pointer-events: none;
+  opacity: 0;
+}

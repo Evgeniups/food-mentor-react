@@ -1,0 +1,36 @@
+@import '../../variables.scss';
+
+.Step3 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .items {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &:not(:last-child) {
+      margin-bottom: 100px;
+    }
+    @media (max-width: 370px) {
+      justify-content: center;
+    }
+
+    .item {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      width: 100%;
+      max-width: 172px;
+      min-height: 60px;
+      padding: 0 15px;
+      border: 1px solid $separatorLight;
+      border-radius: 15px;
+      background: $backgroundLight;
+      &.active {
+        box-shadow: 0 0 5px $primary-100;
+      }
+    }
+  }
+}

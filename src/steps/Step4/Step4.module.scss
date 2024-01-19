@@ -1,0 +1,41 @@
+@import '../../variables.scss';
+
+.Step4 {
+  .title {
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: $generalBlack;
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .content {
+    display: flex;
+    gap: 15px;
+
+    .img {
+      margin: 34px 0 52px;
+    }
+
+    .items {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+
+      .item {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 22px;
+        min-height: 80px;
+        padding: 0 15px;
+        text-align: left;
+        letter-spacing: 0.2px;
+        border: 1px solid $separatorLight;
+        border-radius: 20px;
+      }
+    }
+  }
+}

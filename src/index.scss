@@ -1,0 +1,63 @@
+@import './variables.scss';
+
+@import url('https://fonts.googleapis.com/css?family=Inter:regular,500,700,800&display=swap');
+
+:root {
+  font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+body {
+  font-size: 14px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: 370px;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  font-family: Inter, system-ui, Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+}
+
+input {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+}
